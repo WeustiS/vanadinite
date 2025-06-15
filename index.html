@@ -2,33 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gaussian Splatter Viewer</title>
+  <title>Gaussian Splatter</title>
   <style>
     html, body {
       margin: 0;
       height: 100%;
-      background: #000;
-      overflow: hidden;
     }
-    #viewer {
+    iframe {
+      border: none;
       width: 100%;
       height: 100%;
     }
   </style>
 </head>
 <body>
-  <div id="viewer"></div>
-
-  <!-- Load SuperSplat Viewer -->
-  <script src="https://superspl.at/supersplat.js"></script>
-  <script>
-    SuperSplatViewer.init({
-      container: 'viewer',
-      modelUrl: 'https://www.dropbox.com/scl/fi/qezbknrnceifwn6uealkp/quick_vanadinite.ply?rlkey=sfl56hn30dsk79pygokhh4aii&st=1ecdtz0o&dl=1',
-      backgroundColor: [0, 0, 0],
-      pointSize: 1.0,
-      orbitControls: true
-    });
-  </script>
+  <iframe src="https://superspl.at/view?id=bac4dcae" allowfullscreen></iframe>
 </body>
 </html>
